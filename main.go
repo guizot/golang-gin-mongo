@@ -1,11 +1,11 @@
 package main
 
 import (
-	gin "github.com/guizot/go-gin-mongodb/config/server"
+	gin "github.com/guizot/go-gin-mongodb/src/routes"
 )
 
 func main() {
-	var s gin.Server
+	var s gin.Routes
 	s.StartGin()
 }
 

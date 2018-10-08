@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	config "github.com/guizot/go-gin-mongodb/config/mongo"
+	"github.com/guizot/go-gin-mongodb/config"
 	model_user "github.com/guizot/go-gin-mongodb/src/models/user"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"

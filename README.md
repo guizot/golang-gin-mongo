@@ -1,5 +1,5 @@
 ## Getting Started
-Use Golang 1.11 Version and Above
+Use Golang Version 1.11  and Above
 
 ### Start Server
 ```

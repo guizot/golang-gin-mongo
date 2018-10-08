@@ -11,12 +11,10 @@ func GetMongoDB() (*mgo.Database, error) {
 	dbName := os.Getenv("MONGO_DB_NAME")
 
 	session, err := mgo.Dial(host)
-
 	if err != nil {
 		return nil, err
 	}
 
 	db := session.DB(dbName)
-
 	return db, nil
 }
