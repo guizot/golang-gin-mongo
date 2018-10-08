@@ -1,19 +1,15 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
-	route_user "github.com/guizot/go-gin-mongodb/src/routes/user"
+	gin "github.com/guizot/go-gin-mongodb/config/server"
 )
 
 func main() {
-	r := gin.Default()
-	api := r.Group("/api")
-	{
-		api.GET("/users", route_user.GetAllUser)
-		api.POST("/users", route_user.CreateUser)
-		api.GET("/users/:id", route_user.GetUser)
-		api.PUT("/users/:id", route_user.UpdateUser)
-		api.DELETE("/users/:id", route_user.DeleteUser)
-	}
-	r.Run(":8000")
+	var s gin.Server
+	s.StartGin()
 }
+
+/*
+	Karena variable s memiliki tipe gin.Server milik server.go
+	maka s dapat menjalan kan fungsi StartGin
+*/
